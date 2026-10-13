@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Login | Hotel Portal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="header">
+            <img src="Logo.png" alt="Hotel Logo" class="logo">
+            <h2>Booking Login</h2>
+        </div>
+
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="eg: Praveen" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="+91 12345 67890" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="eg: praveen@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Confirm Booking</button>
+
+            <div id="statusMessage" class="status-message"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
